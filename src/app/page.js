@@ -4,7 +4,7 @@ import React from 'react';
 import { Phone, MessageCircle, CheckCircle, MapPin, Clock, Star } from 'lucide-react';
 
 export default function LandingPage() {
-  const phoneNumber = "917078820452"; 
+  const phoneNumber = "7078820452"; 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=Hi, I want to book a Full Body Massage. Please share details.`;
 
   const services = [
