@@ -1,6 +1,8 @@
 "use client";
 
 import React from 'react';
+// 1. Pehle ye Script component import karo
+import Script from 'next/script'; 
 import { Phone, MessageCircle, CheckCircle, MapPin, Clock, Star } from 'lucide-react';
 
 export default function LandingPage() {
@@ -18,6 +20,26 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-[#fdfaf7] font-sans text-stone-900 pb-20 md:pb-0">
+      
+      {/* --- GOOGLE TAG (gtag.js) ADDED HERE --- */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18082233429"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18082233429');
+        `}
+      </Script>
+
+      {/* --- Baki ka tumhara purana code yahan se shuru hota hai --- */}
+      
+      {/* --- HERO SECTION --- */}
+      <header className="relative h-[85vh] flex items-center justify-center text-center text-white">
+        {/* ... (Baki code same rahega) ... */}
       
       {/* --- HERO SECTION --- */}
       <header className="relative h-[85vh] flex items-center justify-center text-center text-white">
