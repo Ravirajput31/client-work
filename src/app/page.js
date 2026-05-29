@@ -5,11 +5,9 @@ import Script from 'next/script';
 import { Phone, MessageCircle, MapPin, Clock, ShieldCheck } from 'lucide-react';
 
 export default function LandingPage() {
-  // Pure international standard format bina spaces ke
   const phoneNumber = "919557388824"; 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=Hi,%20I%20want%20to%20book%20a%20Wellness%20Therapy%20session.%20Please%20share%20available%20slots.`;
 
-  // Refactored service names to sound clinical and premium (Google Safe)
   const services = [
     { name: "Stress Relief Therapy (60 Mins)", price: "₹2000", description: "Deep relaxation technique for muscle tension." },
     { name: "Aromatherapy & Wellness (90 Mins)", price: "₹3500", description: "Essential oils treatment to rejuvenate mind and body." },
@@ -37,10 +35,12 @@ export default function LandingPage() {
 
       {/* --- HERO SECTION --- */}
       <header className="relative h-[80vh] flex items-center justify-center text-center text-white">
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        
+        {/* UPDATED: 100% Google Ads Safe & Legal Background Image (Zen Spa Stones & Bamboo style) */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop')" }}
         />
         
         <div className="relative z-20 px-4 max-w-4xl">
@@ -117,7 +117,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* --- GOOGLE ADS MANDATORY FOOTER DISCLAIMER --- */}
+      {/* --- FOOTER DISCLAIMER --- */}
       <footer className="py-12 bg-stone-100 text-center text-stone-500 text-xs px-4">
         <div className="max-w-4xl mx-auto space-y-4">
           <p className="leading-relaxed">
